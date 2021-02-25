@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="bindingVariable"
+            type="com.example.apikotlin.home.ui.MainActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".home.ui.MainActivity">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="650dp" />
+
+        <Button
+            android:id="@+id/btn_loadMore"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/rv"
+            android:layout_margin="20dp"
+            android:hint="Load Another Page"
+            android:textColorHint="@color/white" />
+
+    </RelativeLayout>
+</layout>
